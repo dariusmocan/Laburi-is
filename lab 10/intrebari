@@ -1,0 +1,13 @@
+1. What does the program do? What is the precondition? What is the postcondition?
+-Programul are doua variabile int p si r ca input si returneaza q = p + 1.
+-Preconditia este requires r - p > 1.
+-Postconditia este ensures p < q < r.
+
+2. What happens if you change the body of the method with q := p + 2?
+Give a counterexample.
+-S-ar putea sa esueze postconditia. Contraexemplu. r > p + 1 si p < q < r. Daca p = 0 si r = 2. preconditia r - p = 2 corect.
+q = q + 2 = 2. postconditia p < q < r : 0 < 2 < 2 gresit.
+
+3. What happens if you change the precondition with r-p>=1? Give a coun-
+terexample.
+-
